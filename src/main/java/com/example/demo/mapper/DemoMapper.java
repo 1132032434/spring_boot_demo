@@ -2,6 +2,8 @@ package com.example.demo.mapper;
 
 import com.example.demo.entity.DemoInfo;
 
+import java.util.List;
+
 public interface DemoMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,6 @@ public interface DemoMapper {
     int updateByPrimaryKeySelective(DemoInfo record);
 
     int updateByPrimaryKey(DemoInfo record);
+
+    List<DemoInfo> getAll();
 }
